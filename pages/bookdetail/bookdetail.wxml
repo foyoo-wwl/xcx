@@ -1,0 +1,2 @@
+<!--pages/bookdetail/bookdetail.wxml-->
+<text>{{idShow}}</text>

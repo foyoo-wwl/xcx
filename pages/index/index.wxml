@@ -2,8 +2,9 @@
 <import src="item.wxml"/>
 <view class="container">
   <view class="userinfo">
-    <button bindtap="clickMe"> 点击 </button>
+    <button bindtap="clickMe"> 点击点击 </button>
   </view>
+  <navigator url = "/pages/classic/classic">跳转到新页面</navigator>
   <view>
     <text>{{time}}</text>
     <text data-test='{{test}}'>test</text>
@@ -13,7 +14,6 @@
   <view wx:if='{{flag}}'>
     显示
   </view>
-
   <view wx:for="{{array}}" wx:for-index="idx" wx:for-item="itemName" wx:key='itemName.message'>
     {{idx}}: {{itemName.message}}
   </view>

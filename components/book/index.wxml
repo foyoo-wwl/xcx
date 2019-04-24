@@ -1,0 +1,4 @@
+<view class='bookWrap' >
+  <image src='{{bookObj.img}}' bindtap='linkPageDetail'/>
+  <text>{{bookObj.id}}</text>
+</view>

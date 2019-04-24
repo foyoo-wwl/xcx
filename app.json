@@ -1,11 +1,28 @@
 {
-  "pages":[
-    "pages/index/index"
+  "pages": [
+    "pages/classic/classic",
+    "pages/book/book",
+    "pages/bookdetail/bookdetail"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#000",
+    "backgroundColor": "#fff",
+    "color": "#c7c7c7",
+    "list": [
+      {
+        "text": "classic",
+        "pagePath": "pages/classic/classic"
+      },
+      {
+        "text": "book",
+        "pagePath": "pages/book/book"
+      }
+    ]
   }
 }

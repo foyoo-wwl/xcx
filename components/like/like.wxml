@@ -1,0 +1,6 @@
+<view class='container' bindtap='handleLike'>
+  <image src='{{likeFlag?"images/like.png":"images/dislike.png"}}'></image>
+  <text>{{count}}</text>
+</view>
+
+

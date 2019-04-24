@@ -1,0 +1,7 @@
+<view class='navi'>
+    <image src="{{isFirst?'img/dRight.png':'img/right.png'}}"     bindtap='naviLeft'/>
+    <view class='naviTxt'>
+      {{naviTxt}}
+    </view>
+    <image src="{{isLast?'img/dLeft.png':'img/left.png'}}" bindtap='naviRight'/>
+</view>

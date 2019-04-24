@@ -1,3 +1,4 @@
+import {config} from './../config.js'
 const formatTime = date => {
   const year = date.getFullYear()
   const month = date.getMonth() + 1
@@ -14,6 +15,20 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
-module.exports = {
-  formatTime: formatTime
+const axios =(params)=>{
+  return new Promise((resolve,rejevt)=>{
+    wx.request({
+      url: config.baseUrl + params.url,
+      data: params.data ? params.data:{},
+      method:'get',
+      header: {
+        'content-type': 'application/json'
+      },
+      success(res) {
+        resolve(res)
+      }
+    })
+  })
 }
+
+export {axios}

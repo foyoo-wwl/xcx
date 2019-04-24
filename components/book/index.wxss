@@ -1,0 +1,19 @@
+/* components/book/index.wxss */
+.bookWrap{
+  width:300rpx;
+  height:400rpx;
+  position: relative;
+}
+.bookWrap image{
+  width:100%;
+  height:100%;
+  position: absolute;
+  left:0;
+  top:0
+}
+.bookWrap text{
+  position: absolute;
+  width:100%;
+  top:0;
+  text-align: center;
+}

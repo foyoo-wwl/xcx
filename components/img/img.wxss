@@ -1,0 +1,6 @@
+/* components/img/img.wxss */
+.ImgWrap{
+  width:400rpx;
+  height:300rpx;
+  border:10rpx solid #ccc;
+}

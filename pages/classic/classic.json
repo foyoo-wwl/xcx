@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {    
+    "like-cmp":"/components/like/like",
+    "time-cmp": "/components/data/index",
+    "nivi-cmp":"/components/navi/navi",
+    "img-cmp": "/components/img/img"
+  }
+}

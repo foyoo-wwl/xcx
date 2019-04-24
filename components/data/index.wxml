@@ -1,0 +1,3 @@
+<view>
+  {{_time}}
+</view>

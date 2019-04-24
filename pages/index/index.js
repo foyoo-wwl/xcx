@@ -37,6 +37,15 @@ Page({
     this.setData({
       flag:!this.data.flag
     })
+    wx.request({
+      url: 'http://api.douban.com/v2/movie/in_theaters',
+      header:{
+        'Content-Type':"application/json"
+      },
+      success:function(res){
+          console.log(res)
+      }
+    })
   },
   onLoad: function () {
     if (app.globalData.userInfo) {

@@ -1,0 +1,13 @@
+/* components/like/like.wxss */
+.container{
+  display:inline-flex;
+  flex-direction: row;
+}
+.container image{
+  width:50rpx;
+  height:50rpx;
+}
+.container text{
+  font-size: 24rpx;
+  line-height:24rpx;
+}

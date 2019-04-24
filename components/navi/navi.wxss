@@ -1,0 +1,18 @@
+.navi{
+  width:600rpx;
+  height:80rpx;
+  display:inline-flex;
+  flex-direction: row;
+  border-radius: 2rpx;
+  justify-content: space-between;
+  align-items: center;
+  background:#f7f7f7;
+  line-height: 80rpx;
+}
+.naviTxt{
+  font-size: 20px;
+}
+.navi image{
+  width:50rpx;
+  height:50rpx;
+}

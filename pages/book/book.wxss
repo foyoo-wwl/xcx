@@ -1,0 +1,14 @@
+/* pages/book/book.wxss */
+.bookListWrap{
+  width:640rpx;
+  margin:0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.bookCmp{
+  width:300rpx;
+  margin:10rpx;
+}

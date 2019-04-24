@@ -1,0 +1,2 @@
+<view class='ImgWrap' style="background:{{_color}}">
+</view>
