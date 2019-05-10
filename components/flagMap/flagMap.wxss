@@ -1,0 +1,9 @@
+/* components/flagMap/flagMap.wxss */
+.mapFlag{
+  width:80%;
+  margin:20rpx auto;
+  background:#ccc;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}

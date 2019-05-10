@@ -1,6 +1,6 @@
 {
   "component": true,
   "usingComponents": {
-    "rule-cmp": "/components/rule/rule"
+
   }
 }

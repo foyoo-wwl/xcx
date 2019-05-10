@@ -1,31 +1,42 @@
-// pages/book/book.js
-import BookModel from '../../modules/book.js'
-const bookModel = new BookModel()
+// pages/login/login.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    bookList:[]
+
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) { 
-    bookModel.getHotList().then((res)=>{ 
-      this.setData({
-        bookList:res.data.result
-      })
-    })   
+  onLoad: function (options) {
+
   },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
 
   },
-
+  userLogin(){
+    wx.login({
+      success:res=>{
+        console.log(res)
+        wx.request({
+          url: 'https://whzqd.scimall.org',
+          data: {
+            code:res.code
+          },
+          success(res) {
+            console.log(res)
+          }
+        })
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面显示
    */

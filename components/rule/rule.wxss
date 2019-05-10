@@ -1,0 +1,12 @@
+/* components/rule/rule.wxss */
+.ruleWrap{
+  width:100%;
+  height:100%;
+  position: fixed;
+  left:0;
+  top:0;
+  background:#fff;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+}

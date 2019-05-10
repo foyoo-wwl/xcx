@@ -1,0 +1,13 @@
+<view class='postContent'>
+  <view class='mapId'>{{contentArr.pname}}</view>
+  <view class="postWrap">
+      <button bindtap='loadImg' class='imgPostBtn'>照片上传</button>
+      <image src="{{imgUrl}}" class='postImg'></image>
+      <textarea placeholder="请输入内容" class='postText' focus="{{focus}}"/>
+      <button class='imgPostBtn' bindtap='submitArr'>提交</button>
+  </view>
+</view>
+<view class='imgWrap' wx:if='{{imgSaveFlag}}'>
+  <image src='https://whzqd.scimall.org/static/index/img/demo.jpg' class='imgBox'/>
+  <button bindtap='saveimg' class='saveBtn'>保存</button>
+</view>

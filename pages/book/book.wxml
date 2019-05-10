@@ -1,8 +1,0 @@
-<view class='bookListWrap'>
-  <block wx:for="{{bookList}}" wx:key="id">
-    <book-cmp bookObj="{{item}}" class='bookCmp'/>
-  </block>
-</view>
-
-
-

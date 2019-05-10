@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "flag-cmp": "/components/flagMap/flagMap"
+  }
+}

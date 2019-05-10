@@ -1,0 +1,3 @@
+<view class='flagMap' bindtap='jumpPost'>
+    {{mapArr.pname}}
+</view>

@@ -1,0 +1,3 @@
+<view class='ruleWrap'>
+  <button bindtap='goMap'>点击进入地图页面</button>
+</view>

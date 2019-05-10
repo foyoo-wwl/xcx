@@ -1,27 +1,22 @@
+/* pages/map/map.wxss */
 /**index.wxss**/
 .container{
   width:100%;
 }
 .homeMap{
   width:100%;
-  height:500rpx;
-  border-top:1px solid #ccc;
-  border-bottom:1px solid #ccc;
-  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   flex-wrap:wrap;
   align-items: space-between;
 }
 .mapFlag{
-  width:100rpx;
-  height:100rpx;
+  width:80%;
+  margin:20rpx auto;
   background:#ccc;
-  border-radius: 100%;
-  line-height: 100rpx;
-  text-align: center;
-  margin:10rpx 25rpx;
-  font-size: 30rpx
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .isGetSeting{
   width:100%;

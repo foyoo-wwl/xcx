@@ -1,0 +1,10 @@
+<view class="container">
+    <view class='homeMap'>
+      <block wx:for="{{list}}" wx:key="{{item.id}}" wx:for-index="idx">
+        <flag-cmp class='mapFlag'  data-id='{{item.id}}' mapArr='{{item}}'>
+
+        </flag-cmp>      
+      </block>
+    </view>
+</view>
+

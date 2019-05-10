@@ -1,28 +1,11 @@
-<!--index.wxml-->
-<import src="item.wxml"/>
-<view class="container">
-  <view class="userinfo">
-    <button bindtap="clickMe"> 点击点击 </button>
-  </view>
-  <navigator url = "/pages/classic/classic">跳转到新页面</navigator>
-  <view>
-    <text>{{time}}</text>
-    <text data-test='{{test}}'>test</text>
-    <text>{{ a === 10? "变量 a 等于10": "变量 a 不等于10"}}</text>
-    <text>{{[1,2,3]}}</text>
-  </view>
-  <view wx:if='{{flag}}'>
-    显示
-  </view>
-  <view wx:for="{{array}}" wx:for-index="idx" wx:for-item="itemName" wx:key='itemName.message'>
-    {{idx}}: {{itemName.message}}
-  </view>
-  <template name="msgItem">
-    <view>
-      <text> {{index}}: {{msg}} </text>
-      <text> Time: {{time}} </text>
-    </view>
-  </template>
-  <template is="msgItem" data="{{...item}}"/>
-  <template is="item" data="{{text: 'forbar'}}"/>
+<view class='welComePage'>
+  <text>
+    第六届生态环境文化周 环保设施开放单位打卡活动
+     你感兴趣的是哪家？
+  </text>
+  <button bindtap='goRule'>点击进入规则页</button>
 </view>
+<view class='isGetSeting' wx:if="{{isUserSetting}}">
+  <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权</button>
+</view>
+<rule-cmp wx:if='{{ruleFlag}}'/>
